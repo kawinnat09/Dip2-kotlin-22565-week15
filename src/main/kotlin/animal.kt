@@ -1,22 +1,23 @@
 open class Animal{
-    open val count:Int = 0
+    open val count: Int = 0
     open fun gotoSleep(){
-        println("Zzzzzz")
+        println("Zzzzzzzz")
     }
     open fun makeNoise(){
-        println("Wohhh")
+        println("Durrrrrr")
     }
 }
 
-class Cat:Animal(){
-    override val count:Int = 100
+class Cat(override val count:Int = 10):Animal(){
+    //    override val count:Int = 100
     override fun makeNoise(){
-        println("Moew!")
+        println("Meowwwwww,$count")
     }
 }
 
 class Dog:Animal(){
+    override val count:Int = 5
     override fun makeNoise() {
-        println("Wooooof")
+        println("Woooooof,$count")
     }
 }

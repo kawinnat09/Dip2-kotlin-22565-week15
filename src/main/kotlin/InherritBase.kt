@@ -11,3 +11,7 @@ class DerivedClass:BaseClass(){
 ////        println(baseValue)
 //    }
 }
+
+class InherritBase {
+
+}
